@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="03e3a8c5-0853-4243-919d-b3bdf30bc9db" name="hadoop162">
+        <fileTransfer rootFolder="/opt/module/flink-yarn" accessType="SFTP" host="hadoop162" port="22" sshConfigId="71378587-9ec6-48f9-bbd6-4d9cdbdcb1d5" sshConfig="atguigu@hadoop162:22 password">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF8" dataProtectionLevel="Private" muteSftpMessages="true" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
