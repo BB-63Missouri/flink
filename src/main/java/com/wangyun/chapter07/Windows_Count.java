@@ -18,6 +18,7 @@ import java.util.List;
  * @date 2021/7/19 21:25
  */
 //countWindow(x,y)可单x，类型都是long，第一个是滚动间隔，第二个参数是步长
+    //为依赖数量的分类，元素数量就为long
 public class Windows_Count {
     public static void main(String[] args) {
         Configuration conf = new Configuration();

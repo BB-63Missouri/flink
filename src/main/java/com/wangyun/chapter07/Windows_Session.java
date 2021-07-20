@@ -24,7 +24,7 @@ public class Windows_Session {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment(conf);
         env.setParallelism(1);
 
-        env.socketTextStream("hadoop102",9999)
+        env.socketTextStream("hadoop162",9999)
                 .flatMap((FlatMapFunction<String, Tuple2<String,Long>>)(input,out)->{
                     for (String word: input.split(" ")){
                         out.collect(Tuple2.of(word,1L));
