@@ -47,6 +47,7 @@ public class SideOutput_Test {
                 .allowedLateness(Time.seconds(3))
                 //在设置迟到时间后设置侧外输出流，调用方法创建标签，为流名称
                 .sideOutputLateData(new OutputTag<WaterSensor>("outStream"){})
+
                 .process(new ProcessWindowFunction<WaterSensor, String, String, TimeWindow>() {
                     @Override
                     public void process(String key,
@@ -60,7 +61,9 @@ public class SideOutput_Test {
 
         result.print();
         //获取侧输出流
+
         result.getSideOutput(new OutputTag<WaterSensor>("outStream"){}).print();
+
 
 
         try {
